@@ -40,8 +40,7 @@ After installed you must download and find the folder!
 ![StartApplication](https://user-images.githubusercontent.com/36368115/82590072-f8366180-9b94-11ea-8e0e-3b4ecae7f69b.gif)
 ### How to choose which mobile you going to set to debug
 ![ChooseSystemApplication](https://user-images.githubusercontent.com/36368115/82590309-6418ca00-9b95-11ea-953d-79ec7ed8890b.gif)
-### After you choose you just need to debug in you simulator.
-
+### After you choose just need to press the debug in your favorite simulator.
 
 #### License
 Copyright 2020 - Thiago Dias Dos Santos
