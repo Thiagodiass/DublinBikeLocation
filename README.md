@@ -33,6 +33,15 @@ Basically this a simple project of mobile that can expend for multiples applicat
 
 #### Compatibility
 As an application build in Xamarin Forms you can easily compile in different Operation System you can debug in IOS iPhone from SE to 11 Pro Also Android From API 19 To 29 version bellow 19 are not supported.
+## How to Deploy
+You should use Or Visual Studio 2017 or Visual Studio For Mac!
+After installed you must download and find the folder!
+### You should open the file DublinBikeLocation.sln
+![StartApplication](https://user-images.githubusercontent.com/36368115/82590072-f8366180-9b94-11ea-8e0e-3b4ecae7f69b.gif)
+### How to choose which mobile you going to set to debug
+![ChooseSystemApplication](https://user-images.githubusercontent.com/36368115/82590309-6418ca00-9b95-11ea-953d-79ec7ed8890b.gif)
+### After you choose you just need to debug in you simulator.
+
 
 #### License
 Copyright 2020 - Thiago Dias Dos Santos
