@@ -32,7 +32,7 @@ Basically this a simple project of mobile that can expend for multiples applicat
 * [GeoCoordinate.NetCore](https://www.nuget.org/packages/GeoCoordinate.NetCore/)
 
 #### Compatibility
-As an application build in Xamarin Forms you can easily compile in different Operation System you can debug in IOS iPhone from SE to 11 Pro Also Android From API 19 To 29 version bellow 19 is not supported.
+As an application build in Xamarin Forms you can easily compile in different Operation System you can debug in IOS iPhone from SE to 11 Pro Also Android From API 19 To 29 version bellow 19 are not supported.
 
 #### License
 Copyright 2020 - Thiago Dias Dos Santos
