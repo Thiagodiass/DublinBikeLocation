@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    Padding="0, 40, 0, 0"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    x:Class="DublinBikeLocation.View.AllStationsPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout x:Name="container">
+                <Button x:Name="back" Text="Back" Clicked="Back_Clicked" HorizontalOptions="Start" Padding="10,0,0,0"/>
+            </StackLayout>
+            <StackLayout Padding="0" Margin="10" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" VerticalOptions="End">
+                <Frame HeightRequest="100" BackgroundColor="#1C2833" Margin="0" Padding="0">
+                    <StackLayout >
+                        <Label Text="Tap the Pin to more Information!" Padding="0, 40, 0, 0" HorizontalTextAlignment="Center" TextColor="DarkGray" FontSize="16" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

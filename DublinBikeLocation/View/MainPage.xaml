@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+ 
+    Padding="0,0,0,0"
+    NavigationPage.HasNavigationBar="False"         
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DublinBikeLocation.Controls"
+    x:Class="DublinBikeLocation.View.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="DarkBlue"/>
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="BorderRadius" Value="5"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="WidthRequest" Value="300"/>
+                <Setter Property="HeightRequest" Value="40"/>
+            </Style>
+            <Style x:Key="primaryButton" TargetType="Button" BasedOn="{StaticResource button}">
+                <Setter Property="BackgroundColor" Value="DeepSkyBlue"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+            <RelativeLayout >
+                <StackLayout>
+                <local:VideoPlayer Source="DublinBike.mp4"  VerticalOptions="Fill" HorizontalOptions="Fill"/>
+                    
+                </StackLayout>
+                    <Label Text="D" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.1, Property=Height, Constant=-50}"/>
+                <Label Text="U" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.15, Property=Height, Constant=-50}"/>
+                <Label Text="B" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.20, Property=Height, Constant=-50}"/>
+                <Label Text="L" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.25, Property=Height, Constant=-50}"/>
+                <Label Text="I" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.115,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.30, Property=Height, Constant=-50}"/>
+                <Label Text="N" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.35, Property=Height, Constant=-50}"/>
+                <Label Text="B" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.45, Property=Height, Constant=-50}"/>
+                <Label Text="I" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.115,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.5, Property=Height, Constant=-50}"/>
+                <Label Text="K" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.55, Property=Height, Constant=-50}"/>
+                <Label Text="E" HorizontalOptions="Center" TextColor="Red" FontSize="Title" FontAttributes="Bold"
+                           RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=0.1,Constant=1}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.6, Property=Height, Constant=-50}"/>
+                    <Button x:Name="nearby" Text="NEARBY" Clicked="nearby_Clicked"
+                            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5,Constant=-147.5}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.8, Property=Height, Constant=-50}"
+                            Style="{StaticResource primaryButton}" 
+                            />
+                    <Button x:Name="allStations" Text="ALL STATIONS" Clicked="allStations_Clicked"
+                            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5,Constant=-147.5}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Factor=0.85, Property=Height, Constant=-50}"
+                            Style="{StaticResource primaryButton}" 
+                            />
+            </RelativeLayout>
+        </ScrollView>
+
+</ContentPage>

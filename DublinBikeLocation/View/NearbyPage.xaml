@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+             BackgroundColor="#1C2833"
+             Padding="0,40,0,0"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DublinBikeLocation.MarkupExtensions"
+             x:Class="DublinBikeLocation.View.NearbyPage">
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start" Margin="10">
+                <Button x:Name="back" Text="Back" Clicked="Back_Clicked" VerticalOptions="Start" HorizontalOptions="Start" Padding="0,-60,0,0"/>
+                <Label Text="Stations Near" TextColor="DarkGray" FontSize="20" FontAttributes="Bold" Padding="0,0,0,0"/>
+            </StackLayout>
+            <CollectionView x:Name="myStations" Margin="10" SelectionMode="Single" SelectionChanged="myStations_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="15" Padding="0,20,0,0">
+                            <Grid>
+                            <Frame BackgroundColor="White" HasShadow="True" Margin="0" HeightRequest="80" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                                <StackLayout>
+                                    <Label Text="{Binding StationName}" Margin="130,0,-10,0" TextColor="DarkGray" FontSize="16" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Address}" Margin="130,0,-10,0" TextColor="DarkGray" FontSize="14" FontAttributes="Bold"/>
+                                    <Label Text="{Binding distance,StringFormat='{}{0:#,#.00KM}'}" Margin="130,0,-10,0" TextColor="ForestGreen" FontSize="14" FontAttributes="Bold"/>
+                                </StackLayout>
+                            </Frame>
+                                <StackLayout Margin="15,-20,0,0">
+                                    <Frame HasShadow="True" Padding="5" Margin="0" HeightRequest="120"  WidthRequest="120" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" CornerRadius="10">
+                                        <Image Source="{local:EmbeddedImage DublinBikeLocation.Images.DublinBike.jpg}" Aspect="AspectFill" HeightRequest="80" WidthRequest="80"/>
+                                    </Frame>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
